@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Locator</string>
+    <string name="password_hint">Пароль</string>
+    <string name="id_hint" translatable="false">ІД пристрою</string>
+    <string name="text_button_login">Увійти</string>
+    <string name="sign_in">Вхід</string>
+    <string name="field_cannot_empty">Поле не може бути порожнім</string>
+    <string name="login_password_incorrect">Неправильний ІД пристрою або Пароль</string>
+    <string name="failure_connecting">Помилки підключення</string>
+</resources>
