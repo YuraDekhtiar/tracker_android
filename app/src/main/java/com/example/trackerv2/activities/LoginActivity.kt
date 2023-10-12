@@ -1,9 +1,10 @@
-package com.example.trackerv2
+package com.example.trackerv2.activities
 
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import com.example.trackerv2.R
 import com.example.trackerv2.api.RetrofitClient
 import com.example.trackerv2.models.ResponseError
 import com.example.trackerv2.models.ResponseLoginDevice
@@ -56,7 +57,8 @@ class LoginActivity : AppCompatActivity() {
                            ResponseError::class.java
                        )
                        if (responseError.status == 403) {
-                           Toast.makeText(this@LoginActivity, R.string.login_password_incorrect, Toast.LENGTH_LONG).show()
+                           Toast.makeText(this@LoginActivity,
+                               R.string.login_password_incorrect, Toast.LENGTH_LONG).show()
                        }
                        Toast.makeText(this@LoginActivity, "error", Toast.LENGTH_LONG).show()
 

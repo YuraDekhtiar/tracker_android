@@ -24,7 +24,7 @@ open class LocationModel(location: Location) {
     }
 
     fun equalsLocation(location: LocationModel): Boolean {
-        if(latitude == location.latitude && longitude == location.longitude)
+        if (latitude == location.latitude && longitude == location.longitude)
             return true
         return false
     }

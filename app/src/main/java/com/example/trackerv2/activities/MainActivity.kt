@@ -1,4 +1,4 @@
-package com.example.trackerv2
+package com.example.trackerv2.activities
 
 import android.Manifest
 import android.content.Intent
@@ -9,6 +9,8 @@ import android.widget.Toast
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
+import com.example.trackerv2.service.LocationUpdatesService
+import com.example.trackerv2.R
 import com.example.trackerv2.utils.Util
 import com.example.trackerv2.api.RetrofitClient
 import com.example.trackerv2.models.ResponseLoginDevice

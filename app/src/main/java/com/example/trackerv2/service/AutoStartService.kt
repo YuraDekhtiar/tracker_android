@@ -1,10 +1,11 @@
-package com.example.trackerv2
+package com.example.trackerv2.service
 
 import android.content.BroadcastReceiver
 import android.content.Context
 import android.content.Intent
 import android.content.Intent.FLAG_ACTIVITY_NEW_TASK
 import android.util.Log
+import com.example.trackerv2.activities.MainActivity
 
 
 class AutoStartService : BroadcastReceiver() {

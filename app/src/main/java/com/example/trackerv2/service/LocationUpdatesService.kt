@@ -1,4 +1,4 @@
-package com.example.trackerv2
+package com.example.trackerv2.service
 
 import android.Manifest
 import android.annotation.SuppressLint
@@ -30,7 +30,7 @@ import com.google.android.gms.tasks.CancellationTokenSource
 import com.google.android.gms.tasks.OnTokenCanceledListener
 import kotlinx.coroutines.*
 
-class LocationUpdatesService() : Service() {
+class LocationUpdatesService : Service() {
 
     private val TAG = "LocationService"
     private lateinit var fusedLocationClient: FusedLocationProviderClient
@@ -40,10 +40,13 @@ class LocationUpdatesService() : Service() {
     @RequiresApi(Build.VERSION_CODES.N)
     override fun onCreate() {
         super.onCreate()
-        if (Build.VERSION.SDK_INT > Build.VERSION_CODES.O) createNotificationChanel() else startForeground(
-            1,
-            Notification()
-        )
+        if (Build.VERSION.SDK_INT > Build.VERSION_CODES.O)
+            createNotificationChanel()
+        else
+            startForeground(
+                1,
+                Notification()
+            )
         requestLocationUpdates()
     }
 
